@@ -325,7 +325,9 @@ def run(args):
         shutil.rmtree(osp.join(args.output, f'{args.video_name}_inp_tmp_videos'))
     os.remove(f'{args.output}/{args.video_name}_vidlist.txt')
 
+from gooey import Gooey
 
+@Gooey
 def main():
     """Inference demo for Real-ESRGAN.
     It mainly for restoring anime videos.
